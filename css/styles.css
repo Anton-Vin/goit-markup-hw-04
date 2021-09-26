@@ -61,7 +61,7 @@ li {
 img {
   vertical-align: top;
 }
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -287,9 +287,7 @@ img {
 .service {
   padding-top: 0;
 }
-/* .cont-service {
-  padding: 0;
-} */
+
 .service-title {
   margin-bottom: 50px;
   font-size: 36px;
