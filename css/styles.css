@@ -202,6 +202,10 @@ img {
 .site-nav-link.current {
   color: var(--accent-color);
 }
+.envelope {
+  width: 16px;
+  height: 12px;
+}
 
 .connect-header {
   display: flex;
@@ -229,9 +233,21 @@ img {
 /* Hero style */
 .hero {
   padding: 0;
-  background-color: var(--bg-hero-footer);
   text-align: center;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  min-height: 600px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/BG_Hero.jpg');
+  background-color: var(--bg-hero-footer);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
