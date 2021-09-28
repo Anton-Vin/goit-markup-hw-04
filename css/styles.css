@@ -419,7 +419,7 @@ img {
   flex-wrap: wrap;
   /* margin-top: -30px;
   margin-left: -30px; */
-  outline: 1px solid firebrick;
+  outline: 1px solid red;
 }
 .сustomers-links {
   display: flex;
@@ -431,13 +431,21 @@ img {
   background-color: var(--bg-prime-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
+}
+.сustomers-links:hover,
+.сustomers-links:focus {
+  fill: var(--accent-color);
 }
 /* .customers-item {
-  flex-basis: calc(100% / 3 -30px);
+  display: flex;
+} */
+
+/* .customers-item {
+  flex-basis: calc(100% / 6 -30px);
   width: 170px;
   margin-top: 30px;
-  margin-left: 30px; 
+  margin-left: 30px;
 } */
 
 /* PORTFOLIO ORIGINAL STYLES */
