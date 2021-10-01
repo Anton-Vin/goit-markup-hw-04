@@ -8,7 +8,7 @@
   <title>Домашнее задание №4</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -18,12 +18,12 @@
 
 <body>
 
-  <header class="header section">
+  <header class="header">
     <!-------------ВЕРХНЯЯ ЛИНИЯ -------------------->
     <div class="container">
       <nav class="header-nav">
         <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
-        <ul class="site-nav list">
+        <ul class="site-nav">
           <li class="site-nav-item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
           <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
           <li class="site-nav-item"><a href="#contacts" class="site-nav-link">Контакты</a></li>
@@ -31,12 +31,12 @@
       </nav>
       <!-- mail,tel -->
 
-      <ul class="connect-header list">
+      <ul class="connect-header">
         <li class="connect-header-item"><a href="mailto:info@devstudio.com"
-             class="connect-header link"><svg class="envelope" width="16" height="12">
+             class="connect-header-link"><svg class="envelope" width="16" height="12">
                 <use href="./images/symbol-defs (2).svg#icon-envelope"></use>
               </svg>info@devstudio.com</a></li>
-        <li class="connect-header-item"><a href="tel:+380961111111" class="connect-header link"><svg class="envelope" width="10" height="16">
+        <li class="connect-header-item"><a href="tel:+380961111111" class="connect-header-link"><svg class="envelope" width="10" height="16">
           <use href="./images/symbol-defs (2).svg#icon-smartphone"></use>
         </svg>+38 096 111 11 11</a>
         </li>
@@ -47,7 +47,7 @@
   <main>
     <!-------------ГЕРОЙ -------------------->
 
-    <section class="hero section">
+    <section class="hero">
       <div class="container">
         <h1 class="hero-title title">Эффективные решения <br>
           для вашего бизнеса
@@ -59,7 +59,7 @@
     <section class="feature section">
       <div class="container">
         <h2 class="visually-hidden">Особенности</h2>
-        <ul class="feature-list list">
+        <ul class="feature-list">
           <li class="feature-item"><div class="feature-icon"><svg width="70" height="70">
             <use href="./images/symbol-defs (2).svg#icon-Group"></use></svg></div>
             <h3 class="feature-title title">Внимание к деталям</h3>
@@ -90,7 +90,7 @@
     <section class="service section">
       <div class="container">
         <h2 class="service-title title">Чем мы занимаемся</h2>
-        <ul class="service-list list">
+        <ul class="service-list">
           <li class="service-item"><img src="images/box1_.jpg" alt="верстка сайтов" width="370"></li>
           <li class="service-item"><img src="images/box2_.jpg" alt="мобильные приложения" width="370"></li>
           <li class="service-item"><img src="images/box3_.jpg" alt="дизайнерские решения" width="370"></li>
@@ -101,7 +101,7 @@
     <section class="team section">
       <div class="container">
         <h2 class="team-title title">Наша команда</h2>
-        <ul class="team-list list"> 
+        <ul class="team-list"> 
           <li class="team-item"><div class="team-shadow">
             <img src="images/img_1_Igor_Dem.jpg" alt="фото Игоря Демьяненко" width="270" />
             <div class="card-name"><h3 class="team-name">Игорь Демьяненко</h3>
@@ -116,8 +116,8 @@
           </div></div>
           </li>
           <li class="team-item"><div class="team-shadow">
-            <img src="images/img_2_Olga_Rep.jpg" alt="Olga_Rep" width="270" />
-            <div class="card-name"><p class="team-name">Ольга Репина</p>
+            <img src="images/img_2_Olga_Rep.jpg" alt="фото Ольга Репина" width="270" />
+            <div class="card-name"><h3 class="team-name">Ольга Репина</h3>
             <p class="team-prof" lang="en">Frontend Developer</p>
           <!---------------------- SOCIAL LINKS ----------------->
           <ul class="social-links-list">
@@ -137,8 +137,8 @@
           </div></div>
           </li>
           <li class="team-item"><div class="team-shadow">
-            <img src="images/img_3_Nick_Tar.jpg" alt="Nick_Tar" width="270" />
-            <div class="card-name"><p class="team-name">Николай Тарасов</p>
+            <img src="images/img_3_Nick_Tar.jpg" alt="фото Николай Тарасов" width="270" />
+            <div class="card-name"><h3 class="team-name">Николай Тарасов</h3>
             <p class="team-prof" lang="en">Marketing</p>
           <!---------------------------- SOCIAL LINKS ------------------->
           <ul class="social-links-list">
@@ -158,8 +158,8 @@
           </div></div>
           </li>
           <li class="team-item"><div class="team-shadow">
-            <img src="images/img_4_Mich_Erm.jpg" alt="Mich_Erm" width="270" />
-            <div class="card-name"><p class="team-name">Михаил Ермаков</p>
+            <img src="images/img_4_Mich_Erm.jpg" alt="фото Михаил Ермаков" width="270" />
+            <div class="card-name"><h3 class="team-name">Михаил Ермаков</h3>
             <p class="team-prof" lang="en">UI Designer</p>
           <!-- -----------------------SOCIAL LINKS --------------------->
           <ul class="social-links-list">
@@ -214,17 +214,17 @@
       <div class="coordinates">
            <a href="" class="logo logo-indent">Web<span class="logo-footer">Studio</span></a>
       <address class="connect-footer" id="contacts">
-        <ul class="connect-footer-list list">
+        <ul class="connect-footer-list">
           <li class="connect-footer-adress link">г. Киев, пр-т Леси Украинки, 26</li>
           <li class="connect-footer-adress"><a class="connect-footer-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li class="connect-footer-adress"><a class="connect-footer-mail link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address></div>
-      <div><p class="join title">Присоединяйтесь</p>
+      <div class="subscribe"><p class="join title">Присоединяйтесь</p>
       <div class="footer-social">
           
         <ul class="social-links-list footer-social-list">
-          <li class="footer-social-item"><a class="social-network foot" href="https://www.instagram.com/"><svg width="20" height="20">
+          <li class="social-links-item"><a class="social-network foot" href="https://www.instagram.com/"><svg width="20" height="20">
                 <use href="./images/symbol-defs (2).svg#icon-instagram-2"></use>
               </svg></a></li>
           <li class="social-links-item"><a class="social-network foot" href="https://twitter.com/"><svg width="20" height="20">

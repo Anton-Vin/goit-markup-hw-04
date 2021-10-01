@@ -9,14 +9,7 @@
 *:after {
   box-sizing: border-box;
 }
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
-}
+
 nav,
 footer,
 header,
@@ -93,13 +86,7 @@ body {
   background-color: var(--bg-color);
   letter-spacing: 0.03em;
 }
-.link {
-  font-style: normal;
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
+
 .title {
   text-transform: uppercase;
   color: var(--text-title-color);
@@ -150,14 +137,13 @@ img {
   margin: 0px auto;
 }
 .section {
-  width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /* ----------------------Header style----------------------- */
 .header {
-  padding: 0;
+  /* padding: 0; */
   border-bottom: 1px solid #ececec;
 }
 .logo-header {
@@ -212,21 +198,25 @@ img {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+.connect-header-link {
+  display: inline-flex;
+  align-items: center;
+
   list-style: none;
   letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.17;
-}
-.connect-header .link {
+
   color: var(--text-prime-color);
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.connect-header .link:hover .envelope,
-.connect-header .link:focus .envelope,
-.connect-header .link:hover,
-.connect-header .link:focus {
+.connect-header-link:hover .envelope,
+.connect-header-link:focus .envelope,
+.connect-header-link:hover,
+.connect-header-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -235,9 +225,9 @@ img {
 }
 /*--------------------------------- Hero style--------------------- */
 .hero {
-  padding: 0;
+  padding: 200px 0;
   text-align: center;
-  letter-spacing: 0.06em;
+
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -251,19 +241,19 @@ img {
   background-color: var(--bg-hero-footer);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
-  padding-top: 200px;
   margin-bottom: 30px;
   color: var(--text-white-color);
   font-weight: 900;
   font-size: 44px;
+  letter-spacing: 0.06em;
   line-height: 1.37;
 }
 .hero-btn {
   width: 200px;
-  margin-bottom: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -333,7 +323,7 @@ img {
   background-color: var(--bg-second-color);
 }
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -357,6 +347,7 @@ img {
   color: var(--text-title-color);
   text-align: center;
   margin-bottom: 10px;
+  line-height: 1.19;
 }
 .team-prof {
   font-size: 16px;
@@ -375,13 +366,14 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /* ------------------------SOCIAL LINKS STYLES-------------------- */
+
 .social-links-list {
   display: flex;
-  width: 206px;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
   margin-top: 16px;
+}
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-network {
@@ -410,12 +402,10 @@ img {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
 }
 .clients-item {
-  flex-basis: calc(100% / 6 -30px);
-  margin-top: 30px;
+  flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
 .clients-links {
@@ -431,11 +421,12 @@ img {
 }
 .clients-links:hover,
 .clients-links:focus {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
 /* --------------------PORTFOLIO ORIGINAL STYLES---------------------- */
-.filter {
+.filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
@@ -471,7 +462,7 @@ img {
   margin-left: -30px;
 }
 .projekt-item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -508,8 +499,6 @@ img {
   background-color: var(--bg-hero-footer);
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: 0;
-  margin-right: 0;
 }
 .logo-indent {
   display: block;
@@ -520,9 +509,8 @@ img {
   color: var(--text-white-color);
 }
 .connect-footer {
-  /* font-family: Roboto; */
   line-height: 1.71;
-  /* letter-spacing: 0.03em; */
+  font-style: normal;
 }
 
 .connect-footer-adress:not(:last-child) {
@@ -543,6 +531,9 @@ img {
 .coordinates {
   width: 231px;
 }
+.subscribe {
+  margin-left: 70px;
+}
 .footer-social-list {
   margin-top: 0;
 }
@@ -551,14 +542,14 @@ img {
   justify-content: center;
   align-items: center;
   height: ;
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 .join {
   display: block;
   color: var(--text-white-color);
-  margin-left: 70px;
+  /* margin-left: 70px; */
   margin-bottom: 20px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   line-height: 1.17;
 }
 
