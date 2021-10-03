@@ -466,8 +466,11 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
-.projekt-item:hover,
-.projekt-item:focus {
+.projekt-link {
+  display: block;
+}
+.projekt-link:hover,
+.projekt-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -542,14 +545,13 @@ img {
   justify-content: center;
   align-items: center;
   height: ;
-  /* margin-left: 70px; */
 }
 .join {
   display: block;
   color: var(--text-white-color);
-  /* margin-left: 70px; */
+
   margin-bottom: 20px;
-  /* margin-top: 10px; */
+
   line-height: 1.17;
 }
 
@@ -557,7 +559,3 @@ img {
   fill: var(--text-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* .social-network foot:hover,
-.social-network foot:focus {
-  background-color: var(--accent-color);
-   */
